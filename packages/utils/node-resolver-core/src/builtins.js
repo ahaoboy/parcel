@@ -1,8 +1,62 @@
 // @flow strict-local
-// $FlowFixMe this is untyped
-import {builtinModules} from 'module';
+const builtinModules = [
+  '_http_agent',
+  '_http_client',
+  '_http_common',
+  '_http_incoming',
+  '_http_outgoing',
+  '_http_server',
+  '_stream_duplex',
+  '_stream_passthrough',
+  '_stream_readable',
+  '_stream_transform',
+  '_stream_wrap',
+  '_stream_writable',
+  '_tls_common',
+  '_tls_wrap',
+  'assert',
+  'async_hooks',
+  'buffer',
+  'child_process',
+  'cluster',
+  'console',
+  'constants',
+  'crypto',
+  'dgram',
+  'dns',
+  'domain',
+  'events',
+  'fs',
+  'http',
+  'http2',
+  'https',
+  'inspector',
+  'module',
+  'net',
+  'os',
+  'path',
+  'perf_hooks',
+  'process',
+  'punycode',
+  'querystring',
+  'readline',
+  'repl',
+  'stream',
+  'string_decoder',
+  'sys',
+  'timers',
+  'tls',
+  'trace_events',
+  'tty',
+  'url',
+  'util',
+  'v8',
+  'vm',
+  'worker_threads',
+  'zlib',
+];
 
-export const empty: string = require.resolve('./_empty.js');
+export const empty: string = '/_empty.js'; //require.resolve('./_empty.js');
 
 // $FlowFixMe
 let builtins: {[string]: any, ...} = Object.create(null);
@@ -11,28 +65,28 @@ for (let key of builtinModules) {
   builtins[key] = empty;
 }
 
-builtins.assert = 'assert/';
-builtins.buffer = 'buffer/';
-builtins.console = 'console-browserify';
-builtins.constants = 'constants-browserify';
-builtins.crypto = 'crypto-browserify';
-builtins.domain = 'domain-browser';
-builtins.events = 'events/';
-builtins.http = 'stream-http';
-builtins.https = 'https-browserify';
-builtins.os = 'os-browserify/browser.js';
-builtins.path = 'path-browserify';
-builtins.process = 'process/browser.js';
-builtins.punycode = 'punycode/';
-builtins.querystring = 'querystring-es3/';
-builtins.stream = 'stream-browserify';
-builtins.string_decoder = 'string_decoder/';
-builtins.sys = 'util/util.js';
-builtins.timers = 'timers-browserify';
-builtins.tty = 'tty-browserify';
-builtins.url = 'url/';
-builtins.util = 'util/util.js';
-builtins.vm = 'vm-browserify';
-builtins.zlib = 'browserify-zlib';
+// builtins.assert = 'assert/';
+// .buffer = 'buffer/';
+// .console = 'console-browserify';
+// .constants = 'constants-browserify';
+// .crypto = 'crypto-browserify';
+// .domain = 'domain-browser';
+// .events = 'events/';
+// .http = 'stream-http';
+// .https = 'https-browserify';
+// .os = 'os-browserify/browser.js';
+// .path = 'path-browserify';
+// .process = 'process/browser.js';
+// .punycode = 'punycode/';
+// .querystring = 'querystring-es3/';
+// .stream = 'stream-browserify';
+// .string_decoder = 'string_decoder/';
+// .sys = 'util/util.js';
+// .timers = 'timers-browserify';
+// .tty = 'tty-browserify';
+// .url = 'url/';
+// .util = 'util/util.js';
+// .vm = 'vm-browserify';
+// .zlib = 'browserify-zlib';
 
 export default builtins;
