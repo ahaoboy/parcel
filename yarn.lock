@@ -2197,6 +2197,11 @@
   resolved "https://registry.yarnpkg.com/@parcel/css-linux-x64-musl/-/css-linux-x64-musl-1.8.1.tgz#603245a11222fad815f8fa704fe59d15f0abdd46"
   integrity sha512-S1Qf9tZzX7AnmqKRhR/qpFYsqSCxYSz5KdekdxIijPEMxyI5tpWp6g2adGYxrCuV0E5EpcpmXlBT6d6+8FrgPg==
 
+"@parcel/css-wasm@^1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/css-wasm/-/css-wasm-1.8.1.tgz#69491233ded426d3f85a8f6f5c99785725e2a9ca"
+  integrity sha512-ASiFV8drgQyuGdWKv11dODoEZKPiihGXWoFB6ja/5DzkYRms+KKYeUTes1a6ry4fl06wdHTOCjH9J/ykdf3fdQ==
+
 "@parcel/css-win32-x64-msvc@1.8.1":
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@parcel/css-win32-x64-msvc/-/css-win32-x64-msvc-1.8.1.tgz#175a909ae80cd7634f1c9ffa84063b85161df22b"

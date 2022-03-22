@@ -27,5 +27,11 @@
     "@parcel/utils": "2.5.0",
     "browserslist": "^4.6.6",
     "nullthrows": "^1.1.1"
+  },
+  "devDependencies": {
+    "@parcel/css-wasm": "^1.8.1"
+  },
+  "browser": {
+    "@parcel/css": "@parcel/css-wasm"
   }
 }
