@@ -55,5 +55,8 @@
   "browserslist": "Chrome 75",
   "devDependencies": {
     "sharp": "^0.29.1"
+  },
+  "alias": {
+    "preact/jsx-dev-runtime": "preact/jsx-runtime/dist/jsxRuntime.mjs"
   }
 }
